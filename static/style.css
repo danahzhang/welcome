@@ -1,0 +1,121 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 32, 96);
+  }
+  
+.navitem {
+    float: right;
+}
+ a {
+    display: block;
+    color: rgb(237, 189, 216);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 122%;
+}
+
+.navitem:hover {
+    background-color: rgb(237, 189, 216);
+}
+.navitem a:hover {
+    color: rgb(0, 32, 96);
+}
+
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height:400px;
+    top: 0px;
+    left: 40%;
+    padding:15% 15%;
+    border-radius:50%;
+    border: 5px solid rgb(237, 189, 216);
+    background:linear-gradient(to bottom, rgb(0, 32, 96) , rgb(32, 72, 146));
+    z-index: -1;
+}
+
+
+
+.leftside{
+    position: absolute;
+
+    top: 30%;
+    
+}
+
+.largelogo{
+    position: absolute;
+    display: inline-block;
+    font-size: 222%;
+    color: rgb(0, 32, 96);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 145px;
+    left:152%;
+}
+.smalllogo{
+    position: absolute;
+    font-size: 90%;
+    font-style: italic;
+    color: rgb(0, 32, 96);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 195px;
+    left:154%;
+}
+
+.homeface{
+    position: relative;
+    top: 10px;
+    left:40%;
+    height: 370px;
+    width: 370px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .homeface {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .clicktext {
+    background-color:rgb(0, 32, 96);
+    color: rgb(237, 189, 216);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px 16px;
+  }
+
+.the600 .leftside { left: 0%; }
+.the600 .largelogo {
+    top:330px;
+    left:50%
+    
+ }
+ .the600 .smalllogo {
+    top:380px;
+    left:50%
+    
+ }
+.the1200 .leftside { left: 10%; }
