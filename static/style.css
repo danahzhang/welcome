@@ -46,7 +46,7 @@
     position: absolute;
 
     top: 30%;
-    
+
 }
 
 .largelogo{
@@ -107,7 +107,7 @@
     padding: 16px 16px;
   }
 
-.the600 .leftside { left: 0%; }
+.the600 .leftside { left: -100px; }
 .the600 .largelogo {
     top:330px;
     left:50%
@@ -115,7 +115,7 @@
  }
  .the600 .smalllogo {
     top:380px;
-    left:50%
+    left:20%
     
  }
-.the1200 .leftside { left: 10%; }
+.the1200 .leftside { left: 20%; }
