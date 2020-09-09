@@ -4,10 +4,15 @@
     padding: 0;
     overflow: hidden;
     background-color: rgb(0, 32, 96);
+    z-index: -1;
   }
   
 .navitem {
     float: right;
+}
+
+.navitemhome {
+  float: left;
 }
  a {
     display: block;
@@ -27,24 +32,15 @@
 }
 
 
-.circle {
-    position: absolute;
-    width: 400px;
-    height:400px;
-    top: 0px;
-    left: 40%;
-    padding:15% 15%;
-    border-radius:50%;
-    border: 5px solid rgb(237, 189, 216);
-    background:linear-gradient(to bottom, rgb(0, 32, 96) , rgb(32, 72, 146));
-    z-index: -1;
+.adjust{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+
 }
-
-
 
 .leftside{
     position: absolute;
-
     top: 30%;
 
 }
@@ -68,6 +64,39 @@
     left:154%;
 }
 
+h1, td{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 32, 96);
+}
+
+.circle {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height:400px;
+  top: 0px;
+  left: 40%;
+  padding:15% 15%;
+  border-radius:50%;
+  border: 5px solid rgb(237, 189, 216);
+  background:linear-gradient(to bottom, rgb(0, 32, 96) , rgb(32, 72, 146));
+  z-index: -1;
+}
+
+.pinkcircle {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height:400px;
+  top: 0px;
+  left: 40%;
+  padding:15% 15%;
+  border-radius:50%;
+  background:rgb(237, 189, 216);
+  z-index: -1;
+}
+
+
 .homeface{
     position: relative;
     top: 10px;
@@ -78,6 +107,14 @@
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
+}
+
+.smallface{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display: block;
+
 }
 
 .middle {
@@ -91,11 +128,11 @@
     text-align: center;
   }
   
-  .container:hover .homeface {
+  .leftside:hover .homeface {
     opacity: 0.3;
   }
   
-  .container:hover .middle {
+  .leftside:hover .middle {
     opacity: 1;
   }
   
@@ -106,6 +143,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 16px 16px;
   }
+
+  .textbox { width: 390px; padding: 5px; }
+  .textboxbig { width: 390px; height: 200px; padding: 5px; }
 
 .the600 .leftside { left: -100px; }
 .the600 .largelogo {
@@ -118,4 +158,4 @@
     left:20%
     
  }
-.the1200 .leftside { left: 20%; }
+.the1200 .leftside { left: 25%; }
