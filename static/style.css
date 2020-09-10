@@ -1,7 +1,45 @@
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:10% 70% 20%;
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:10% 70% 20%;
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.item1 {     
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+.item1form {     
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+}
+
+.item4{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(0, 32, 96);
+  z-index: 0;
+}
+
+
 .navbar {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 3%;
     overflow: hidden;
     background-color: rgb(0, 32, 96);
     z-index: -1;
@@ -21,7 +59,8 @@
     padding: 14px 20px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 122%;
+    font-size: 2vw;
+    
 }
 
 .navitem:hover {
@@ -31,37 +70,32 @@
     color: rgb(0, 32, 96);
 }
 
-
-.adjust{
+.remove {
   position: absolute;
-  top: 20%;
-  left: 30%;
-
-}
-
-.leftside{
-    position: absolute;
-    top: 30%;
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .largelogo{
-    position: absolute;
-    display: inline-block;
-    font-size: 222%;
-    color: rgb(0, 32, 96);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top: 145px;
-    left:152%;
+  position: relative;
+  top: 16vh;
+  float: left;
+  font-size: 2.2vw;
+  color: rgb(0, 32, 96);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .smalllogo{
-    position: absolute;
-    font-size: 90%;
-    font-style: italic;
-    color: rgb(0, 32, 96);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top: 195px;
-    left:154%;
+  position: relative;
+  float: left;
+  top: 80%;
+  left: 10%;
+  font-size: 65%;
+  font-style: italic;
+  color: rgb(0, 32, 96);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 h1, td{
@@ -70,59 +104,59 @@ h1, td{
 }
 
 .circle {
-  position: absolute;
+  position: relative;
   display: block;
-  width: 400px;
-  height:400px;
-  top: 0px;
-  left: 40%;
-  padding:15% 15%;
+  width: 26vw;
+  padding-top: 26vw;
   border-radius:50%;
-  border: 5px solid rgb(237, 189, 216);
+  border: .5vw solid rgb(237, 189, 216);
   background:linear-gradient(to bottom, rgb(0, 32, 96) , rgb(32, 72, 146));
   z-index: -1;
+  top: 18vh;
+  left: 25vw;
+
 }
 
-.pinkcircle {
-  position: absolute;
+.pinkcircle{
+  position: relative;
   display: block;
-  width: 400px;
-  height:400px;
-  top: 0px;
-  left: 40%;
-  padding:15% 15%;
+  width: 100%;
+  padding-top: 100%;
   border-radius:50%;
   background:rgb(237, 189, 216);
   z-index: -1;
+  float: right;
+  top: 10%;
+  
 }
 
 
 .homeface{
-    position: relative;
-    top: 10px;
-    left:40%;
-    height: 370px;
-    width: 370px;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
+  position: relative;
+  float: right;
+  width: 22vw;
+  padding-top: 22vw;
+  padding: 2vw;;
+  opacity: 1;
+  display: block;
+  backface-visibility: hidden;
 }
 
 .smallface{
     position: absolute;
     height: 30px;
     width: 30px;
+    opacity: 1;
     display: block;
-
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 95%;
+
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -145,17 +179,5 @@ h1, td{
   }
 
   .textbox { width: 390px; padding: 5px; }
-  .textboxbig { width: 390px; height: 200px; padding: 5px; }
+  .textboxbig { width: 390px; height: 200px; padding: 5px;}
 
-.the600 .leftside { left: -100px; }
-.the600 .largelogo {
-    top:330px;
-    left:50%
-    
- }
- .the600 .smalllogo {
-    top:380px;
-    left:20%
-    
- }
-.the1200 .leftside { left: 25%; }
