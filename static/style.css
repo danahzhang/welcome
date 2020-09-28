@@ -51,7 +51,7 @@
 .navitemhome {
   float: left;
 }
- a {
+li a {
     display: block;
     color: rgb(237, 189, 216);
     text-align: center;
@@ -238,4 +238,8 @@ h1, td{
 .resume{
   color: rgb(0, 32, 96);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.face{
+  height: 60px;
+  width: 60px;
 }

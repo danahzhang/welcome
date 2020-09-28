@@ -19,12 +19,12 @@
     </div> 
         <div></div>
         <div>
-            <h1>@dana's_resume</h1>
+            <h1><img src="images/face.png" class="face">dana's_resume</h1>
             <p class="resume">please click the tabs</p>
-            <button class="resumetab" onclick="giveinfo()">@contact_info</button><div class="resume" id="contact"></div><br>
-            <button class="resumetab" onclick="giveobjective()">@objectives</button><div class="resume" id="objective"></div><br>
-            <button class="resumetab" onclick="giveskills()">@skills</button><div class="resume" id="skills"></div><br>
-            <button class="resumetab" onclick="givehistory()">@employment_history</button><div class="resume" id="history"></div><br>
+        <button class="resumetab" onclick="giveinfo()" style="font-family:Impact, Charcoal, sans-serif">@contact_info</button><div class="resume" id="contact"></div><br>
+            <button class="resumetab" onclick="giveobjective()" style="font-family:Arial, Helvetica, sans-serif">@objectives</button><div class="resume" id="objective"></div><br>
+            <button class="resumetab" onclick="giveskills()" style="font-family:Lucida Console, Courier, monospace">@skills</button><div class="resume" id="skills"></div><br>
+            <button class="resumetab" onclick="givehistory()" style="font-family:Times New Roman, Times, serif">@employment_history</button><div class="resume" id="history"></div><br>
             </div>
               </div>
     </div>
@@ -34,8 +34,9 @@
       contactinfo += "<br>";
       contactinfo += "Email: danahzhang@gmail.com";
       contactinfo += "<br>";
-      contactinfo += "GitHub: https://github.com/danahzhang";
-      document.getElementById("contact").innerHTML = contactinfo;
+      var link = "GitHub: https://github.com/danahzhang";
+      var thelink = link.link("https://github.com/danahzhang");
+      document.getElementById("contact").innerHTML = contactinfo +thelink;
   }
     function giveskills(){
       var skills = "Languages: English, Mandarin Chinese";
