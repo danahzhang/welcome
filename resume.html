@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resumes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="form">
+    <div class="item1form">
+        <ul class="navbar">
+            <li class="navitem"><a href="resume.html">resume</a></li>
+            <li class="navitem"><a href="#projects">projects</a></li>
+            <li class="navitem"><a href="#news">extra</a></li>
+            <li class="navitem"><a href="form.html">contact me</a></li>
+            <li class="navitem"><a href="#about">about</a></li>
+            </ul>
+    </div> 
+        <div></div>
+        <div>
+            <h1>@dana's_resume</h1>
+            <p class="resume">please click the tabs</p>
+            <button class="resumetab" onclick="giveinfo()">@contact_info</button><div class="resume" id="contact"></div><br>
+            <button class="resumetab" onclick="giveobjective()">@objectives</button><div class="resume" id="objective"></div><br>
+            <button class="resumetab" onclick="giveskills()">@skills</button><div class="resume" id="skills"></div><br>
+            <button class="resumetab" onclick="givehistory()">@employment_history</button><div class="resume" id="history"></div><br>
+            </div>
+              </div>
+    </div>
+    <script>
+    function giveinfo(){
+      var contactinfo = "Phone: (510) 990-1146";
+      contactinfo += "<br>";
+      contactinfo += "Email: danahzhang@gmail.com";
+      contactinfo += "<br>";
+      contactinfo += "GitHub: https://github.com/danahzhang";
+      document.getElementById("contact").innerHTML = contactinfo;
+  }
+    function giveskills(){
+      var skills = "Languages: English, Mandarin Chinese";
+      skills += "<br>";
+      skills += "Coding Languages: Python, HTML, JavaScript";
+      skills += "<br>";
+      skills += "Libraries: Pandas, Matplotlib, Numpy, D3, Plot.ly";
+      skills += "<br>";
+      skills += "Tools: Excel, Powerpoint, Word, Github, Tableau";
+      skills += "<br>";
+      skills += "Databases: PostgreSQL, SQLite";
+      document.getElementById("skills").innerHTML = skills;}
+    function giveobjective(){
+      var objective = "My 3 Career Objectives are the Following:";
+      objective += "<br>";
+      objective += "1. Contribute Value to the Company and the World at Large";
+      objective += "<br>";
+      objective += "2. Improve One's Skills";
+      objective += "<br>";
+      objective += "3. Be a Positive Team Member within a Working Environment";
+      document.getElementById("objective").innerHTML = objective;}
+    function givehistory(){
+      var history = "Administrative Assistant";
+      history += "<br>";
+      history += "2019 – current";
+      history += "<br>";
+      history += "Milpitas, CA";
+      history += "<br>";
+      history += "Sporton International (USA) Inc. ";
+      history += "<br>";
+      history += "Summary:";
+      history += "<br>";
+      history += "As our company is a small business, my job responsibility emcompasses a various and diversity list of task. One of my main task is tracking, which includes tracking the company’s internal spending, purchasing, payroll, shipments, samples, and equipment. I also handle the customer service end of the company and help with translating and various miscellaneous tasks.";
+      history += "<br>";
+      history += "Key Accomplishments";
+      history += "<br>";
+      history += "1. Used Python to Automate Paperwork";
+      history += "<br>";
+      history += "2. Create Individual Tracking Systems for Spending, Equipment, and Shipments";
+
+      document.getElementById("history").innerHTML = history;}
+  </script>
+</body>
+</html>

@@ -111,7 +111,7 @@ h1, td{
   border: .5vw solid rgb(237, 189, 216);
   background:linear-gradient(to bottom, rgb(0, 32, 96) , rgb(32, 72, 146));
   z-index: -1;
-  top: 18vh;
+  top: 10Svh;
   left: 25vw;
 
 }
@@ -180,3 +180,62 @@ h1, td{
   .textbox { width: 390px; padding: 5px; }
   .textboxbig { width: 390px; height: 200px; padding: 5px;}
 
+.dropbtn {
+  background-color:rgb(0, 32, 96);
+  color:rgb(237, 189, 216);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(0, 32, 96);
+  color:rgb(237, 189, 216);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content option {
+  color:rgb(237, 189, 216);;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content option:hover {
+  background-color:rgb(237, 189, 216);
+  color:rgb(0, 32, 96)
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(237, 189, 216);
+  color:rgb(0, 32, 96);
+}
+
+.resumetab {
+  color: rgb(0, 32, 96);
+  background-color: rgb(237, 189, 216);
+  border: 1px solid rgb(0, 32, 96);
+  padding: 10px;
+}
+
+.resume{
+  color: rgb(0, 32, 96);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
